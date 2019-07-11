@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Purple Rain</title>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/sketch.js"></script>
+    <script src="./js/CCapture.all.min.js"></script>
+    <script src="./worker/"></script>
+
+    <script>
+      var capturer = new CCapture({
+        framerate: 60,
+        format: 'gif',
+        workersPath: './js/',
+        verbose: true
+      });
+    </script>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
