@@ -15,10 +15,10 @@ var drops = [];
 function setup() {
   var p5Canvas = createCanvas(1200, 1600);
   canvas = p5Canvas.canvas;
-  capturer.start();
   for (var i = 0; i < 500; i++) {
     drops[i] = new Drop();
   }
+  capturer.start();
 }
 
 function draw() {
